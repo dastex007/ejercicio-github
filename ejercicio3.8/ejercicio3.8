@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marco hernandez">
+    <title>Document</title>
+    <style>
+        #foto{ width:90%; height:90%;object-fit: cover; position:absolute;z-index: -1;}
+        h1{display: flex;justify-content: center;align-items: center;}
+    </style>
+</head>
+<body>
+    <img id="foto" src="1.jpg">
+    <h1>FUTBOL</h1>
+    <script>
+        let a=["1.jpg","2.jpg","3.jpg"]
+        let i=Math.floor(Math.random()*a.length)
+        document.getElementById("foto").src=a[i];
+
+    </script>
+    
+</body>
+</html>
